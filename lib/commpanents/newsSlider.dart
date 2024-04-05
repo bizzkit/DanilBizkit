@@ -41,7 +41,8 @@ class _NewsSliderState extends State<NewsSlider> {
           Expanded(
             child: PageView.builder(
               itemCount: _newsTexts.length,
-              controller: PageController(viewportFraction: 0.8),
+              controller: PageController(
+                  viewportFraction: 0.60), // Adjusted viewportFraction
               onPageChanged: (index) {
                 setState(() {
                   _currentIndex = index;
@@ -89,9 +90,10 @@ class _NewsSliderState extends State<NewsSlider> {
                     _newsTexts[index],
                     style: TextStyle(
                       fontFamily: 'Raleway',
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700),
+                      fontSize: 15,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ],
               ),
@@ -104,9 +106,10 @@ class _NewsSliderState extends State<NewsSlider> {
               _newsTimes[index],
               style: TextStyle(
                 fontFamily: 'Raleway',
-                  fontSize: 13,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400),
+                fontSize: 13,
+                color: Colors.white,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ),
         ],

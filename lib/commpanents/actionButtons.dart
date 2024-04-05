@@ -5,7 +5,8 @@ class ActionButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10),
+      height: 112,
+       padding: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 10),
       decoration: BoxDecoration(
         color: Color.fromRGBO(39, 40, 62, 1),
         borderRadius: BorderRadius.circular(20),
